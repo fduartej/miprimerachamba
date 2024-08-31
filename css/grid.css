@@ -1,0 +1,51 @@
+body {
+  display: grid;
+  grid: auto-flow min-content / 1fr;
+  grid-template-areas:
+    "header"
+    "aside"
+    "nav"
+    "main"
+    "pies"
+    "footer";
+  margin: 1em;
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media only screen and (min-width: 650px) {
+  body {
+    grid: auto-flow min-content / 1fr 2fr;
+    grid-template-areas:
+      "header"
+      "aside"
+      "nav"
+      "main"
+      "pies"
+      "footer";
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .pies img {
+    grid-column: span 4;
+  }
+}

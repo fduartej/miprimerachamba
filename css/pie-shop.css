@@ -10,7 +10,7 @@ body {
 
 body {
   background-color: #e6e4d9;
-  background-image: url(../../../12-column-v2/img/pattern.png);
+  background-image: url("images/pattern.png");
 }
 
 nav,
