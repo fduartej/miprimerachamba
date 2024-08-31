@@ -9,66 +9,13 @@
     <meta name="description" content="Store front for Bethany's Pie Shop">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png">
-    <style>
-        body {
-            margin-top: 0px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #e6e4d9;
-            background-image: url('images/pattern.png');
-        }
-
-        #mainheader {
-            background-color: #a593c2;
-        }
-
-        #leftmenu {
-            float: left;
-            width: 30%;
-            margin-bottom: 20px;
-        }
-
-        nav {
-            height: 60px;
-            width: 1000px;
-            margin: 0 auto 20px;
-        }
-
-        .searchbox {
-            padding: 5px;
-            margin: 10px 10px;
-            width: 200px;
-        }
-
-        #main {
-            float: right;
-            width: 70%;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            clear: both;
-            width: 100%;
-        }
-
-        header,
-        section,
-        footer,
-        aside,
-        nav,
-        main,
-        article,
-        figure {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/pie-shop.css">
 </head>
 
 <body>
     <header id="mainheader">
         <nav>
-            
             <img src="images/cake.svg" height="55" />
         </nav>
     </header>
@@ -80,11 +27,18 @@
                 <h4 style="text-align: center;">Browse our pies</h4>
             </header>
             <input type="search" class="searchbox" placeholder="Search our store" />
-
         </aside>
+        <nav>
+            <h2>Browse our pies</h2>
+            <ul>
+                <li><a href="#">All pies</a></li>
+                <li><a href="#">Cheese pies</a></li>
+                <li><a href="#">Fruit pies</a></li>
+                <li><a href="#">Promotions</a></li>
+            </ul>
+        </nav>
         <main id="main">
             <article>
-
                 <header>
                     <h1 style="font-size:35px;color:#a593c2">Welcome to Bethany's Pie Shop1</h1>
                 </header>
@@ -92,10 +46,6 @@
                     <img src="images/bethany-fullsize.jpg" width="600" alt="Bethany in her pie shop" />
                     <figcaption>Bethany in her pie shop</figcaption>
                 </figure>
-
-                <a href="misproyectos.html">Link de OtraPagina</a><br/>
-                <a href="contacto.html">Link de OtraPagina</a><br/>
-
                 <h2>Our history</h2>
                 <p>
                     For many years, <b>Bethany</b> has been baking the most delicious pies at her home. In 2013, we
