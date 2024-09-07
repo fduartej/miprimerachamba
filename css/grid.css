@@ -60,4 +60,8 @@
     text-align: center;
     padding-left: 0;
   }
+  .embed-container iframe {
+    width: 100%;
+    height: auto;
+  }
 }
