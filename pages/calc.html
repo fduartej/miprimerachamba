@@ -11,8 +11,33 @@
     <link rel="stylesheet" type="text/css" href="../css/grid.css" />
     <script type="text/javascript">
         function calc(){
-          console.log("hello world js log");
-          prompt("Your age?","0"); 
+          var quantity = parseFloat(document.getElementById("quantity").value);
+          var price = parseFloat(document.getElementById("price").value);
+          var operator = document.getElementById("operator").value;
+          console.log("quantity: "+quantity+", price:"+price+", operator:"+operator);
+          var total = 0;
+          switch(operator){
+                case '*':
+                    total = quantity * price;
+                    break;
+                case '+':
+                    total = quantity + price;
+                    break;
+                case '-':
+                    total = quantity - price;
+                    break;
+                case '/':
+                    if(price !== 0){
+                        total = quantity / price;
+                    }else{
+                        console.log("no se puede dividir");  
+                    }
+                    break;
+                default:
+                    break;
+           }
+
+          document.getElementById("result").innerHTML = "El total es: "+total;  
         }
     </script>
   </head>
@@ -33,13 +58,21 @@
     <main>
         <section class="content-section">
             <h2>Calc</h2>
-            <p>If you any questions, feel free to reach out to us</p>
+            <p>Before to buy your pies, prepare your budget</p>
             <form class="contact-form">
                 <label for="quantity">Your Quantity:</label>  
-                <input type="text" id="quantity" placeholder="enter your name"/>  
+                <input type="text" id="quantity" placeholder="enter your quantity"/>  
                 <label for="price">Your price:</label>  
-                <input type="text" id="price" placeholder="enter your name"/>  
-                <input type="button" value="Calc" onclick="calc();"/>  
+                <input type="text" id="price" placeholder="enter your price"/>  
+                <label for="operator">Your operator:</label>  
+                <select id="operator">
+                    <option value="*">Multi</option>
+                    <option value="+">Suma</option>
+                    <option value="-">Resta</option>
+                    <option value="/">Division</option>
+                </select>  
+                <input type="button" value="Calc" onclick="calc();"/> 
+                <label id="result"></label> 
             </form>
         </section>
     </main>
