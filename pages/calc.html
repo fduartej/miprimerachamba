@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../css/pie-shop.css" />
     <link rel="stylesheet" type="text/css" href="../css/grid.css" />
     <script type="text/javascript">
-        function msg(){
+        function calc(){
           console.log("hello world js log");
           prompt("Your age?","0"); 
         }
@@ -25,7 +25,8 @@
       <ul>
         <li><a href="/index.html">Home</a></li>
         <li><a href="/pages/applepies.html">All pies</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+        <li><a href="#">Calc</a></li>
         <li><a href="/pages/about.html">About</a></li>
       </ul>
     </nav>
@@ -34,13 +35,11 @@
             <h2>Get in Touch</h2>
             <p>If you any questions, feel free to reach out to us</p>
             <form class="contact-form">
-                <label for="name">Your Name:</label>  
-                <input type="text" id="name" placeholder="enter your name"/>  
-                <label for="email">Your Email:</label>  
-                <input type="text" id="email" placeholder="enter your name"/>  
-                <label for="message">Your Message:</label>
-                <textarea id="message" placeholder="enter your message"></textarea>
-                <input type="button" value="Send" onclick="msg();"/>  
+                <label for="quantity">Your Quantity:</label>  
+                <input type="text" id="quantity" placeholder="enter your name"/>  
+                <label for="price">Your price:</label>  
+                <input type="text" id="price" placeholder="enter your name"/>  
+                <input type="button" value="Calc" onclick="calc();"/>  
             </form>
         </section>
     </main>
