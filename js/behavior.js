@@ -2,9 +2,7 @@ const mybutton = document.getElementById("buttonChange");
 
 mybutton.addEventListener("click", changeColor);
 
-mybutton.addEventListener("keydown", function (event) {
-  alert("key");
-});
+mybutton.addEventListener("keydown", changeSize);
 
 function changeColor() {
   var red = Math.floor(Math.random() * 256);
@@ -15,8 +13,8 @@ function changeColor() {
 }
 
 function changeSize(event) {
-  let currentWith = parseInt(mybutton.style.width);
-  let currentHeight = parseInt(mybutton.style.height);
+  let currentWith = parseInt(mybutton.style.width) || 100;
+  let currentHeight = parseInt(mybutton.style.height) || 100;
   if (event.key === "ArrowUp") {
     currentWith = currentWith + 10;
     currentHeight = currentHeight + 10;
