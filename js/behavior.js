@@ -7,5 +7,5 @@ function changeColor() {
   var green = Math.floor(Math.random() * 256);
   var blue = Math.floor(Math.random() * 256);
 
-  mybutton.style.backgroundcolor = "rgb(${red}, ${green}, ${blue})";
+  mybutton.style.backgroundcolor = `rgb(${red}, ${green}, ${blue})`;
 }
