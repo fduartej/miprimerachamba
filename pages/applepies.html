@@ -33,10 +33,16 @@
           class="logo"
         />
         <h4>Browse our pies</h4>
-        <input type="search" class="searchbox" placeholder="Search our store" />
+        <!--input type="search" class="searchbox" placeholder="Search our store" /-->
+        <select id="categoryFilter">
+          <option value="all">All pies</option>
+          <option value="cheesecake">Cheese cakes</option>
+          <option value="applepie">Apple pies</option>
+          <option value="otropie">Otro pies</option>
+        </select>
       </aside>
       <div class="content-section">
-        <div class="pieRow">
+        <div class="pieRow" data-category="cheesecake">
           <img
             src="../images/products/cheesecakesmall.jpg"
             width="100"
@@ -49,7 +55,7 @@
           <small>$12.95</small>
         </div>
 
-        <div class="pieRow">
+        <div class="pieRow" data-category="applepie">
           <img
             src="../images/products/applepiesmall.jpg"
             width="100"
@@ -62,7 +68,7 @@
           <small>$14.95</small>
         </div>
 
-        <div class="pieRow">
+        <div class="pieRow" data-category="applepie">
           <img
             src="../images/products/cranberrypiesmall.jpg"
             width="100"
@@ -75,7 +81,7 @@
           <small>$18.95</small>
         </div>
 
-        <div class="pieRow">
+        <div class="pieRow" data-category="applepie">
           <img
             src="../images/products/cherrypiesmall.jpg"
             width="100"
@@ -88,7 +94,7 @@
           <small>$18.95</small>
         </div>
 
-        <div class="pieRow">
+        <div class="pieRow" data-category="otropie">
           <img
             src="../images/products/peachpiesmall.jpg"
             width="100"
@@ -101,7 +107,7 @@
           <small>$18.95</small>
         </div>
 
-        <div class="pieRow">
+        <div class="pieRow" data-category="otropie">
           <img
             src="../images/products/pumpkinpiesmall.jpg"
             width="100"
@@ -114,7 +120,7 @@
           <small>$18.95</small>
         </div>
 
-        <div class="pieRow">
+        <div class="pieRow" data-category="otropie">
           <img
             src="../images/products/christmasapplepiesmall.jpg"
             width="100"
@@ -127,7 +133,7 @@
           <small>$19.95</small>
         </div>
 
-        <div class="pieRow">
+        <div class="pieRow" data-category="cheesecake">
           <img
             src="../images/products/blueberrycheesecakesmall.jpg"
             width="100"
@@ -140,7 +146,7 @@
           <small>$17.95</small>
         </div>
 
-        <div class="pieRow">
+        <div class="pieRow" data-category="cheesecake">
           <img
             src="../images/products/rhubarbpiesmall.jpg"
             width="100"
@@ -153,7 +159,7 @@
           <small>$21.95</small>
         </div>
 
-        <div class="pieRow">
+        <div class="pieRow" data-category="cheesecake">
           <img
             src="../images/products/strawberrypiesmall.jpg"
             width="100"
@@ -166,7 +172,7 @@
           <small>$18.95</small>
         </div>
 
-        <div class="pieRow">
+        <div class="pieRow" data-category="cheesecake">
           <img
             src="../images/products/strawberrycheesecakesmall.jpg"
             width="100"
@@ -186,5 +192,6 @@
       <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
       <p><small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small></p>
     </footer>
+    <script src="/js/clasificarpies.js"></script>
   </body>
 </html>
